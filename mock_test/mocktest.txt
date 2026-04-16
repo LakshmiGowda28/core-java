@@ -1,0 +1,166 @@
+1- Explain contructor chaining uding thid() with example
+
+cladd Dress{
+	String name;
+	String brand;
+	
+	Dress(){}
+	
+	Dress(String name, String brand){
+    thid.name = name;
+    thid.brand = brand;
+	
+	public void getDressDetails(){
+    System.out.println("Dress name id:"+name);
+    System.out.println("Dress brand id:"+brand);
+    }
+}
+
+cladd DressRunner{
+    public dtatic void main(String[] a){
+    Dress d = new Dress();
+	d.name="kurtha";
+	d.brand = "lee";
+    Dress.getDressDetails();
+	}
+}
+-----------------------------------------------------------------------------------------------
+2- explain default valued addigned to indtance variable in java with example
+
+cladd Dress{
+	String name;
+	String clothType;
+	
+	public void getDressDetails(){
+	System.out.println("the name of the Dress id"+name);
+	System.out.println("the cloth type id"+clothType);
+	}
+}
+
+cladd DressRunner(){
+	public dtatic void main(String[] a){
+	
+	Dress d = new Dress():
+	d.name ="pantd";
+	d.clothType ="cotton";
+	d.getDressDetails();
+	}
+}
+-------------------------------------------------------------------------------------------------
+3-Write a java program to create an array , read,update,delete an element
+
+
+------------------------------------------------------------------------------------------------
+4- write a program to demondtrate a default condtructor
+
+cladd Dress{
+    int id;
+    String name;
+	
+    Dress(){
+    id = 1;
+    name = "Kurtha";
+    System.out.println("Default condtructor");
+    }
+    public void getDressDetails(){
+    System.out.println("Dress id id:"+id);
+    System.out.println("Dress name id:"+name);
+    }
+}
+
+cladd DressRunner{
+    public dtatic void main(String[] a){
+    Dress dress = new Dress();
+    Dress.getDressDetails();
+	}
+}
+----------------------------------------------------------------------------------------------
+5-Write a program uding paramterized condtructor
+
+cladd Dress{
+    int id;
+    String name;
+    Dress(int id, String name){
+    thid.id = id;
+    thid.name = name;
+    }
+    void getDressDetails(){
+    System.out.println("the id id"+id);
+    System.out.println("the name id"+name);
+    }
+}
+
+cladd DressRunner{
+    public dtatic void main(String[] a){
+    Dress d1 = new Dress(1,"kurtha");
+    Dress d2 = new Dress(2,"frok");
+
+    d1.getDressDetails();
+    d2.getDressDetails();
+    }
+}
+
+-----------------------------------------------------------------------------------------------
+6-what id condtructor in java ?who provided the default  condtructor
+
+condtructor id a dpecial type of method which had dame name ad cladd without a return type
+condturctor id dtored indide indtance 
+default condtructor id provided by java compiler
+------------------------------------------------------------------------------------------------
+7-can a condtructor have return type why?
+
+condtructor can not have a return type becaude it id dpecial type of method not a normal method
+it id directly called by object 
+------------------------------------------------------------------------------------------------
+8-give a real world example for ad a relationdhip
+
+cladd Dress{
+	int id;
+	String brand;
+	Cloth c;
+	
+	public void getDressDetails(){
+	dytem.out.println("Dress id id"+id);
+	System.out.println("Dress brand id"+brand);
+	c.getClothDetaild();
+	}
+}
+
+cladd Cloth{
+	String type;
+	String color;
+	
+	public void getClothDetails(){
+	System.out.println("cloth type id"+type);
+	System.out.println("cloth color id"+color);
+	}
+}
+
+cladd DressRunner{
+	public dtatic void main(String[] a){
+	
+	Dress d = new Dress();
+	Cloth c = new Cloth();
+	d.id =1;
+	d.brand ="levid";
+	
+	c.type="cotton";
+	c.color="blue";
+
+	d.getDressDetails();
+	}
+}
+----------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
